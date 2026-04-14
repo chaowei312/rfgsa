@@ -1,0 +1,124 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+VRAM: 23.5 GB
+
+Split 6-10: running configs 6-10 (5 of 11)
+
+Running 5 configurations:
+   1. rfgsa_r64
+   2. rfgsa_s4
+   3. rfgsa_s16
+   4. mosa_s4
+   5. mosa_s16
+
+======================================================================
+Config: rfgsa_r64
+  attn=rfgsa  h=512  E=8  s=8  r=64  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 46,216,752
+  Epoch  1/10  train=16.4742  val=7.1324  ppl=1251.9  best_val=7.1324  [92.6s]
+  Epoch  2/10  train=6.7424  val=6.4431  ppl=628.4  best_val=6.4431  [187.2s]
+  Epoch  3/10  train=6.3010  val=6.2154  ppl=500.4  best_val=6.2154  [281.8s]
+  Epoch  4/10  train=6.0849  val=6.0739  ppl=434.4  best_val=6.0739  [376.0s]
+  Epoch  5/10  train=5.9293  val=5.9846  ppl=397.3  best_val=5.9846  [470.7s]
+  Epoch  6/10  train=5.8101  val=5.9273  ppl=375.1  best_val=5.9273  [565.4s]
+  Epoch  7/10  train=5.7144  val=5.8785  ppl=357.3  best_val=5.8785  [660.0s]
+  Epoch  8/10  train=5.6446  val=5.8613  ppl=351.2  best_val=5.8613  [754.6s]
+  Epoch  9/10  train=5.5994  val=5.8520  ppl=347.9  best_val=5.8520  [849.2s]
+  Epoch 10/10  train=5.5771  val=5.8505  ppl=347.4  best_val=5.8505  [943.7s]
+  DONE in 943.7s  best_val=5.8505  ppl=347.4
+  [saved 1/5 to ablation_results/rfgsa_ablation_gpu6.json]
+
+======================================================================
+Config: rfgsa_s4
+  attn=rfgsa  h=512  E=8  s=4  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 45,430,320
+  Epoch  1/10  train=16.7064  val=7.1261  ppl=1244.0  best_val=7.1261  [98.5s]
+  Epoch  2/10  train=6.7523  val=6.4959  ppl=662.4  best_val=6.4959  [196.8s]
+  Epoch  3/10  train=6.2891  val=6.2148  ppl=500.1  best_val=6.2148  [295.1s]
+  Epoch  4/10  train=6.0472  val=6.0347  ppl=417.7  best_val=6.0347  [393.6s]
+  Epoch  5/10  train=5.8852  val=5.9384  ppl=379.3  best_val=5.9384  [492.1s]
+  Epoch  6/10  train=5.7585  val=5.8706  ppl=354.5  best_val=5.8706  [590.6s]
+  Epoch  7/10  train=5.6584  val=5.8233  ppl=338.1  best_val=5.8233  [688.9s]
+  Epoch  8/10  train=5.5864  val=5.8041  ppl=331.6  best_val=5.8041  [787.4s]
+  Epoch  9/10  train=5.5399  val=5.7906  ppl=327.2  best_val=5.7906  [885.8s]
+  Epoch 10/10  train=5.5166  val=5.7906  ppl=327.2  best_val=5.7906  [984.4s]
+  DONE in 984.4s  best_val=5.7906  ppl=327.2
+  [saved 2/5 to ablation_results/rfgsa_ablation_gpu6.json]
+
+======================================================================
+Config: rfgsa_s16
+  attn=rfgsa  h=512  E=8  s=16  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 45,430,320
+  Epoch  1/10  train=17.2846  val=7.2552  ppl=1415.5  best_val=7.2552  [89.4s]
+  Epoch  2/10  train=6.7939  val=6.5129  ppl=673.8  best_val=6.5129  [178.7s]
+  Epoch  3/10  train=6.4819  val=6.3347  ppl=563.8  best_val=6.3347  [268.1s]
+  Epoch  4/10  train=6.2284  val=6.1910  ppl=488.3  best_val=6.1910  [357.7s]
+  Epoch  5/10  train=6.0778  val=6.0881  ppl=440.6  best_val=6.0881  [447.1s]
+  Epoch  6/10  train=5.9666  val=6.0107  ppl=407.8  best_val=6.0107  [536.5s]
+  Epoch  7/10  train=5.8806  val=5.9681  ppl=390.8  best_val=5.9681  [626.0s]
+  Epoch  8/10  train=5.8212  val=5.9363  ppl=378.5  best_val=5.9363  [715.4s]
+  Epoch  9/10  train=5.7805  val=5.9257  ppl=374.5  best_val=5.9257  [804.7s]
+  Epoch 10/10  train=5.7608  val=5.9242  ppl=374.0  best_val=5.9242  [893.9s]
+  DONE in 893.9s  best_val=5.9242  ppl=374.0
+  [saved 3/5 to ablation_results/rfgsa_ablation_gpu6.json]
+
+======================================================================
+Config: mosa_s4
+  attn=mosa  h=512  E=8  s=4  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,643,840
+  Epoch  1/10  train=16.7463  val=7.2609  ppl=1423.5  best_val=7.2609  [95.0s]
+  Epoch  2/10  train=6.7649  val=6.4061  ppl=605.6  best_val=6.4061  [190.0s]
+  Epoch  3/10  train=6.2605  val=6.1406  ppl=464.3  best_val=6.1406  [285.3s]
+  Epoch  4/10  train=5.9926  val=5.9564  ppl=386.2  best_val=5.9564  [380.3s]
+  Epoch  5/10  train=5.8077  val=5.8251  ppl=338.7  best_val=5.8251  [475.4s]
+  Epoch  6/10  train=5.6597  val=5.7418  ppl=311.6  best_val=5.7418  [570.4s]
+  Epoch  7/10  train=5.5454  val=5.6752  ppl=291.5  best_val=5.6752  [665.7s]
+  Epoch  8/10  train=5.4616  val=5.6407  ppl=281.7  best_val=5.6407  [760.9s]
+  Epoch  9/10  train=5.4110  val=5.6251  ppl=277.3  best_val=5.6251  [856.0s]
+  Epoch 10/10  train=5.3872  val=5.6233  ppl=276.8  best_val=5.6233  [951.2s]
+  DONE in 951.2s  best_val=5.6233  ppl=276.8
+  [saved 4/5 to ablation_results/rfgsa_ablation_gpu6.json]
+
+======================================================================
+Config: mosa_s16
+  attn=mosa  h=512  E=8  s=16  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,643,840
+  Epoch  1/10  train=16.8479  val=7.0643  ppl=1169.4  best_val=7.0643  [86.2s]
+  Epoch  2/10  train=6.7019  val=6.4101  ppl=608.0  best_val=6.4101  [172.6s]
+  Epoch  3/10  train=6.2705  val=6.2026  ppl=494.0  best_val=6.2026  [258.9s]
+  Epoch  4/10  train=6.0545  val=6.0618  ppl=429.1  best_val=6.0618  [345.5s]
+  Epoch  5/10  train=5.9103  val=5.9694  ppl=391.3  best_val=5.9694  [432.1s]
+  Epoch  6/10  train=5.8054  val=5.9081  ppl=368.0  best_val=5.9081  [518.6s]
+  Epoch  7/10  train=5.7258  val=5.8696  ppl=354.1  best_val=5.8696  [604.9s]
+  Epoch  8/10  train=5.6659  val=5.8408  ppl=344.1  best_val=5.8408  [691.4s]
+  Epoch  9/10  train=5.6270  val=5.8296  ppl=340.2  best_val=5.8296  [778.0s]
+  Epoch 10/10  train=5.6068  val=5.8287  ppl=339.9  best_val=5.8287  [864.2s]
+  DONE in 864.2s  best_val=5.8287  ppl=339.9
+  [saved 5/5 to ablation_results/rfgsa_ablation_gpu6.json]
+
+All results saved to ablation_results/rfgsa_ablation_gpu6.json
+
+==========================================================================================
+Name                           |     Params |  Best Val |      PPL |    Time
+-------------------------------+------------+-----------+----------+--------
+rfgsa_r64                      | 46,216,752 |    5.8505 |    347.4 |  943.7s
+rfgsa_s4                       | 45,430,320 |    5.7906 |    327.2 |  984.4s
+rfgsa_s16                      | 45,430,320 |    5.9242 |    374.0 |  893.9s
+mosa_s4                        | 44,643,840 |    5.6233 |    276.8 |  951.2s
+mosa_s16                       | 44,643,840 |    5.8287 |    339.9 |  864.2s
+==========================================================================================

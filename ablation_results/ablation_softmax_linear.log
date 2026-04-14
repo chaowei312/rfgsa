@@ -1,0 +1,80 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+VRAM: 23.5 GB
+
+Split 0-2: running configs 0-2 (3 of 6)
+
+Running 3 configurations:
+   1. rfgsa_linear_softmax_s4
+   2. rfgsa_linear_softmax_s8
+   3. rfgsa_linear_softmax_s16
+
+======================================================================
+Config: rfgsa_linear_softmax_s4
+  attn=rfgsa_softmax  h=512  E=8  s=4  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,668,464
+  Epoch  1/10  train=16.4063  val=7.0824  ppl=1190.8  best_val=7.0824  [100.5s]
+  Epoch  2/10  train=6.7048  val=6.3590  ppl=577.7  best_val=6.3590  [201.1s]
+  Epoch  3/10  train=6.2384  val=6.1526  ppl=469.9  best_val=6.1526  [301.5s]
+  Epoch  4/10  train=6.0116  val=6.0075  ppl=406.5  best_val=6.0075  [402.1s]
+  Epoch  5/10  train=5.8451  val=5.8883  ppl=360.8  best_val=5.8883  [502.7s]
+  Epoch  6/10  train=5.7170  val=5.8209  ppl=337.3  best_val=5.8209  [603.3s]
+  Epoch  7/10  train=5.6201  val=5.7737  ppl=321.7  best_val=5.7737  [704.0s]
+  Epoch  8/10  train=5.5474  val=5.7369  ppl=310.1  best_val=5.7369  [804.6s]
+  Epoch  9/10  train=5.5012  val=5.7272  ppl=307.1  best_val=5.7272  [905.2s]
+  Epoch 10/10  train=5.4785  val=5.7272  ppl=307.1  best_val=5.7272  [1005.7s]
+  DONE in 1005.7s  best_val=5.7272  ppl=307.1
+  [saved 1/3 to ablation_results/rfgsa_ablation_softmax_linear.json]
+
+======================================================================
+Config: rfgsa_linear_softmax_s8
+  attn=rfgsa_softmax  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,668,464
+  Epoch  1/10  train=16.8557  val=7.1323  ppl=1251.8  best_val=7.1323  [94.3s]
+  Epoch  2/10  train=6.7463  val=6.3833  ppl=591.9  best_val=6.3833  [189.0s]
+  Epoch  3/10  train=6.2833  val=6.1897  ppl=487.7  best_val=6.1897  [283.5s]
+  Epoch  4/10  train=6.0579  val=6.0492  ppl=423.8  best_val=6.0492  [378.1s]
+  Epoch  5/10  train=5.8998  val=5.9495  ppl=383.6  best_val=5.9495  [472.7s]
+  Epoch  6/10  train=5.7809  val=5.8849  ppl=359.6  best_val=5.8849  [567.2s]
+  Epoch  7/10  train=5.6918  val=5.8543  ppl=348.7  best_val=5.8543  [661.8s]
+  Epoch  8/10  train=5.6274  val=5.8197  ppl=336.9  best_val=5.8197  [756.6s]
+  Epoch  9/10  train=5.5858  val=5.8103  ppl=333.7  best_val=5.8103  [851.2s]
+  Epoch 10/10  train=5.5654  val=5.8116  ppl=334.2  best_val=5.8103  [945.6s]
+  DONE in 945.6s  best_val=5.8103  ppl=333.7
+  [saved 2/3 to ablation_results/rfgsa_ablation_softmax_linear.json]
+
+======================================================================
+Config: rfgsa_linear_softmax_s16
+  attn=rfgsa_softmax  h=512  E=8  s=16  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,668,464
+  Epoch  1/10  train=16.5071  val=7.0878  ppl=1197.2  best_val=7.0878  [89.2s]
+  Epoch  2/10  train=6.7254  val=6.4125  ppl=609.4  best_val=6.4125  [178.6s]
+  Epoch  3/10  train=6.2844  val=6.2044  ppl=494.9  best_val=6.2044  [268.0s]
+  Epoch  4/10  train=6.0789  val=6.0789  ppl=436.5  best_val=6.0789  [357.2s]
+  Epoch  5/10  train=5.9349  val=6.0058  ppl=405.8  best_val=6.0058  [446.7s]
+  Epoch  6/10  train=5.8288  val=5.9323  ppl=377.0  best_val=5.9323  [535.9s]
+  Epoch  7/10  train=5.7500  val=5.8981  ppl=364.3  best_val=5.8981  [625.1s]
+  Epoch  8/10  train=5.6911  val=5.8758  ppl=356.3  best_val=5.8758  [714.4s]
+  Epoch  9/10  train=5.6519  val=5.8678  ppl=353.5  best_val=5.8678  [803.9s]
+  Epoch 10/10  train=5.6323  val=5.8680  ppl=353.5  best_val=5.8678  [893.4s]
+  DONE in 893.4s  best_val=5.8678  ppl=353.5
+  [saved 3/3 to ablation_results/rfgsa_ablation_softmax_linear.json]
+
+All results saved to ablation_results/rfgsa_ablation_softmax_linear.json
+
+==========================================================================================
+Name                           |     Params |  Best Val |      PPL |    Time
+-------------------------------+------------+-----------+----------+--------
+rfgsa_linear_softmax_s4        | 44,668,464 |    5.7272 |    307.1 | 1005.7s
+rfgsa_linear_softmax_s8        | 44,668,464 |    5.8103 |    333.7 |  945.6s
+rfgsa_linear_softmax_s16       | 44,668,464 |    5.8678 |    353.5 |  893.4s
+==========================================================================================

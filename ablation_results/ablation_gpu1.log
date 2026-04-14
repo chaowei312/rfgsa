@@ -1,0 +1,146 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+VRAM: 23.5 GB
+
+Split 0-5: running configs 0-5 (6 of 11)
+
+Running 6 configurations:
+   1. dense_baseline
+   2. mosa_baseline
+   3. rfgsa_r32
+   4. rfgsa_linear_gate
+   5. rfgsa_r32_no_gate
+   6. rfgsa_r8
+
+======================================================================
+Config: dense_baseline
+  attn=dense  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,619,264
+  Epoch  1/10  train=16.1030  val=7.1257  ppl=1243.5  best_val=7.1257  [105.9s]
+  Epoch  2/10  train=6.7829  val=7.2941  ppl=1471.6  best_val=7.1257  [212.5s]
+  Epoch  3/10  train=7.8870  val=6.2158  ppl=500.6  best_val=6.2158  [319.1s]
+  Epoch  4/10  train=6.1343  val=6.0220  ppl=412.4  best_val=6.0220  [425.8s]
+  Epoch  5/10  train=5.9121  val=5.8560  ppl=349.3  best_val=5.8560  [532.5s]
+  Epoch  6/10  train=5.7207  val=5.7426  ppl=311.9  best_val=5.7426  [639.3s]
+  Epoch  7/10  train=5.5803  val=5.6595  ppl=287.0  best_val=5.6595  [746.8s]
+  Epoch  8/10  train=5.4770  val=5.5921  ppl=268.3  best_val=5.5921  [853.5s]
+  Epoch  9/10  train=5.4144  val=5.5695  ppl=262.3  best_val=5.5695  [960.2s]
+  Epoch 10/10  train=5.3870  val=5.5656  ppl=261.3  best_val=5.5656  [1066.9s]
+  DONE in 1066.9s  best_val=5.5656  ppl=261.3
+  [saved 1/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+======================================================================
+Config: mosa_baseline
+  attn=mosa  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,643,840
+  Epoch  1/10  train=16.6991  val=7.0674  ppl=1173.1  best_val=7.0674  [91.2s]
+  Epoch  2/10  train=6.7136  val=6.3882  ppl=594.8  best_val=6.3882  [182.6s]
+  Epoch  3/10  train=6.2589  val=6.1767  ppl=481.4  best_val=6.1767  [286.9s]
+  Epoch  4/10  train=6.0332  val=6.0352  ppl=417.9  best_val=6.0352  [378.3s]
+  Epoch  5/10  train=5.8793  val=5.9338  ppl=377.6  best_val=5.9338  [469.7s]
+  Epoch  6/10  train=5.7606  val=5.8599  ppl=350.7  best_val=5.8599  [561.3s]
+  Epoch  7/10  train=5.6698  val=5.8143  ppl=335.1  best_val=5.8143  [652.9s]
+  Epoch  8/10  train=5.6043  val=5.7883  ppl=326.5  best_val=5.7883  [744.5s]
+  Epoch  9/10  train=5.5626  val=5.7757  ppl=322.4  best_val=5.7757  [836.0s]
+  Epoch 10/10  train=5.5418  val=5.7768  ppl=322.7  best_val=5.7757  [927.9s]
+  DONE in 927.9s  best_val=5.7757  ppl=322.4
+  [saved 2/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+======================================================================
+Config: rfgsa_r32
+  attn=rfgsa  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 45,430,320
+  Epoch  1/10  train=16.6291  val=7.1341  ppl=1254.0  best_val=7.1341  [94.8s]
+  Epoch  2/10  train=6.7475  val=6.4246  ppl=616.8  best_val=6.4246  [189.5s]
+  Epoch  3/10  train=6.2893  val=6.1972  ppl=491.4  best_val=6.1972  [284.1s]
+  Epoch  4/10  train=6.0762  val=6.0613  ppl=428.9  best_val=6.0613  [378.9s]
+  Epoch  5/10  train=5.9255  val=5.9770  ppl=394.2  best_val=5.9770  [473.6s]
+  Epoch  6/10  train=5.8108  val=5.9232  ppl=373.6  best_val=5.9232  [568.2s]
+  Epoch  7/10  train=5.7210  val=5.8807  ppl=358.0  best_val=5.8807  [662.8s]
+  Epoch  8/10  train=5.6574  val=5.8558  ppl=349.3  best_val=5.8558  [757.6s]
+  Epoch  9/10  train=5.6147  val=5.8536  ppl=348.5  best_val=5.8536  [852.2s]
+  Epoch 10/10  train=5.5937  val=5.8535  ppl=348.4  best_val=5.8535  [947.0s]
+  DONE in 947.0s  best_val=5.8535  ppl=348.4
+  [saved 3/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+======================================================================
+Config: rfgsa_linear_gate
+  attn=rfgsa_linear  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,668,464
+  Epoch  1/10  train=16.5364  val=7.1723  ppl=1302.8  best_val=7.1723  [91.9s]
+  Epoch  2/10  train=6.7425  val=6.4293  ppl=619.7  best_val=6.4293  [184.0s]
+  Epoch  3/10  train=6.2835  val=6.2017  ppl=493.6  best_val=6.2017  [276.3s]
+  Epoch  4/10  train=6.0581  val=6.0455  ppl=422.2  best_val=6.0455  [368.6s]
+  Epoch  5/10  train=5.8967  val=5.9768  ppl=394.2  best_val=5.9768  [460.9s]
+  Epoch  6/10  train=5.7781  val=5.8995  ppl=364.9  best_val=5.8995  [553.2s]
+  Epoch  7/10  train=5.6863  val=5.8592  ppl=350.4  best_val=5.8592  [645.4s]
+  Epoch  8/10  train=5.6197  val=5.8418  ppl=344.4  best_val=5.8418  [737.7s]
+  Epoch  9/10  train=5.5762  val=5.8334  ppl=341.5  best_val=5.8334  [830.3s]
+  Epoch 10/10  train=5.5548  val=5.8296  ppl=340.2  best_val=5.8296  [922.6s]
+  DONE in 922.6s  best_val=5.8296  ppl=340.2
+  [saved 4/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+======================================================================
+Config: rfgsa_r32_no_gate
+  attn=rfgsa_no_gate  h=512  E=8  s=8  r=32  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 45,430,320
+  Epoch  1/10  train=17.1541  val=7.3947  ppl=1627.4  best_val=7.3947  [94.6s]
+  Epoch  2/10  train=6.9624  val=6.6296  ppl=757.2  best_val=6.6296  [189.2s]
+  Epoch  3/10  train=6.5026  val=6.3773  ppl=588.3  best_val=6.3773  [283.9s]
+  Epoch  4/10  train=6.2718  val=6.2029  ppl=494.2  best_val=6.2029  [378.6s]
+  Epoch  5/10  train=6.1097  val=6.1001  ppl=445.9  best_val=6.1001  [473.2s]
+  Epoch  6/10  train=5.9829  val=6.0271  ppl=414.5  best_val=6.0271  [567.8s]
+  Epoch  7/10  train=5.8934  val=5.9786  ppl=394.9  best_val=5.9786  [662.6s]
+  Epoch  8/10  train=5.8237  val=5.9461  ppl=382.3  best_val=5.9461  [757.2s]
+  Epoch  9/10  train=5.7796  val=5.9306  ppl=376.4  best_val=5.9306  [851.9s]
+  Epoch 10/10  train=5.7587  val=5.9284  ppl=375.5  best_val=5.9284  [946.5s]
+  DONE in 946.5s  best_val=5.9284  ppl=375.5
+  [saved 5/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+======================================================================
+Config: rfgsa_r8
+  attn=rfgsa  h=512  E=8  s=8  r=8  layers=6  lr=0.0003
+======================================================================
+  train: 10,999,504 tokens -> 21,483 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,840,496
+  Epoch  1/10  train=16.6218  val=7.0931  ppl=1203.6  best_val=7.0931  [92.5s]
+  Epoch  2/10  train=6.7309  val=6.4541  ppl=635.3  best_val=6.4541  [185.3s]
+  Epoch  3/10  train=6.3157  val=6.2333  ppl=509.4  best_val=6.2333  [278.0s]
+  Epoch  4/10  train=6.1051  val=6.0990  ppl=445.4  best_val=6.0990  [370.7s]
+  Epoch  5/10  train=5.9613  val=6.0138  ppl=409.1  best_val=6.0138  [463.2s]
+  Epoch  6/10  train=5.8483  val=5.9410  ppl=380.3  best_val=5.9410  [555.9s]
+  Epoch  7/10  train=5.7609  val=5.9106  ppl=368.9  best_val=5.9106  [648.3s]
+  Epoch  8/10  train=5.6944  val=5.8828  ppl=358.8  best_val=5.8828  [740.7s]
+  Epoch  9/10  train=5.6517  val=5.8747  ppl=355.9  best_val=5.8747  [833.2s]
+  Epoch 10/10  train=5.6304  val=5.8736  ppl=355.5  best_val=5.8736  [925.7s]
+  DONE in 925.7s  best_val=5.8736  ppl=355.5
+  [saved 6/6 to ablation_results/rfgsa_ablation_gpu1.json]
+
+All results saved to ablation_results/rfgsa_ablation_gpu1.json
+
+==========================================================================================
+Name                           |     Params |  Best Val |      PPL |    Time
+-------------------------------+------------+-----------+----------+--------
+dense_baseline                 | 44,619,264 |    5.5656 |    261.3 | 1066.9s
+mosa_baseline                  | 44,643,840 |    5.7757 |    322.4 |  927.9s
+rfgsa_r32                      | 45,430,320 |    5.8535 |    348.4 |  947.0s
+rfgsa_linear_gate              | 44,668,464 |    5.8296 |    340.2 |  922.6s
+rfgsa_r32_no_gate              | 45,430,320 |    5.9284 |    375.5 |  946.5s
+rfgsa_r8                       | 44,840,496 |    5.8736 |    355.5 |  925.7s
+==========================================================================================
