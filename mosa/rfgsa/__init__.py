@@ -15,6 +15,7 @@ from .load_balance import RoutingFreeLoadBalance
 from .core import PureRFGSA
 from .linear_gate import PureRFGSA_LinearGate
 from .softmax_gate import PureRFGSA_SoftmaxGate, PureRFGSA_NormSoftmaxGate
+from .threshold_gate import PureRFGSA_ThresholdGate, PureRFGSA_ThresholdGateSigmoid
 from .concat import PureRFGSA_Concat
 from .kv_cache import SparseKVCache, rfgsa_ar_step
 from .hybrid import RFGSA
