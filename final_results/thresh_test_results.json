@@ -1,0 +1,14 @@
+{
+  "rfgsa_thresh": {
+    "test_loss": 3.8369870326098274,
+    "test_ppl": 46.3855056690468
+  },
+  "rfgsa_thresh_sig": {
+    "test_loss": 3.8551073354833267,
+    "test_ppl": 47.23368651976893
+  },
+  "rfgsa_thresh_sparse": {
+    "test_loss": 3.948607150246115,
+    "test_ppl": 51.863079026632256
+  }
+}

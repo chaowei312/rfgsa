@@ -1,0 +1,7 @@
+Device: cuda  visible=7
+MODEL_NAME=hg_sparse_s0_no_gumbel  use_gumbel=False
+
+=== Test set evaluation ===
+  test: 283,628 tokens -> 553 sequences
+  test_loss=4.0643  test_ppl=58.22
+  Saved: /home/lopedg/project/RFGSA/comparison_results/hg_test_result.json

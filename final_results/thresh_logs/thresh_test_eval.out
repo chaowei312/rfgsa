@@ -1,0 +1,15 @@
+
+  Test evaluation: rfgsa_thresh
+  test: 283,628 tokens -> 553 sequences
+    test_loss=3.8370  test_ppl=46.4
+  wrote final_results/thresh_test_results.json: rfgsa_thresh -> test_ppl=46.39
+
+  Test evaluation: rfgsa_thresh_sig
+  test: 283,628 tokens -> 553 sequences
+    test_loss=3.8551  test_ppl=47.2
+  wrote final_results/thresh_test_results.json: rfgsa_thresh_sig -> test_ppl=47.23
+
+  Test evaluation: rfgsa_thresh_sparse
+  test: 283,628 tokens -> 553 sequences
+    test_loss=3.9486  test_ppl=51.9
+  wrote final_results/thresh_test_results.json: rfgsa_thresh_sparse -> test_ppl=51.86

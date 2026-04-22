@@ -1,0 +1,171 @@
+Device: cuda
+GPU: NVIDIA GeForce RTX 4090
+VRAM: 23.5 GB
+
+######################################################################
+# Training on full WikiText-103  (rfgsa_thresh_sparse)
+######################################################################
+
+======================================================================
+Training: rfgsa_thresh_sparse on full WikiText-103
+  per_step_batch=16  accum_steps=2  (effective batch=32)
+======================================================================
+  train: 118,376,629 tokens -> 231,204 sequences
+  validation: 248,309 tokens -> 484 sequences
+  Parameters: 44,668,464
+  Steps/epoch: 14,450
+    step    500  loss=7.9198  lr=3.00e-04  ETA_epoch=26.7min
+    step   1000  loss=6.7813  lr=3.00e-04  ETA_epoch=24.7min
+    step   1500  loss=6.6615  lr=3.00e-04  ETA_epoch=22.7min
+    step   2000  loss=6.3800  lr=2.99e-04  ETA_epoch=20.7min
+    step   2500  loss=6.2286  lr=2.99e-04  ETA_epoch=18.7min
+    step   3000  loss=6.0856  lr=2.99e-04  ETA_epoch=16.8min
+    step   3500  loss=6.2944  lr=2.98e-04  ETA_epoch=14.8min
+    step   4000  loss=6.0501  lr=2.98e-04  ETA_epoch=12.8min
+    step   4500  loss=5.7936  lr=2.97e-04  ETA_epoch=10.8min
+    step   5000  loss=5.7447  lr=2.96e-04  ETA_epoch=8.8min
+    step   5500  loss=5.9156  lr=2.96e-04  ETA_epoch=6.8min
+    step   6000  loss=5.8908  lr=2.95e-04  ETA_epoch=4.9min
+    step   6500  loss=5.6662  lr=2.94e-04  ETA_epoch=2.9min
+    step   7000  loss=5.6057  lr=2.93e-04  ETA_epoch=0.9min
+  Epoch  1/10  train=7.1182  val=5.4377  ppl=229.9  best=5.4377  [1720.8s] *
+    step   7500  loss=5.5682  lr=2.92e-04  ETA_epoch=27.6min
+    step   8000  loss=5.4588  lr=2.91e-04  ETA_epoch=25.6min
+    step   8500  loss=5.4899  lr=2.90e-04  ETA_epoch=23.6min
+    step   9000  loss=5.2742  lr=2.89e-04  ETA_epoch=21.7min
+    step   9500  loss=5.3240  lr=2.87e-04  ETA_epoch=19.7min
+    step  10000  loss=4.8760  lr=2.86e-04  ETA_epoch=17.7min
+    step  10500  loss=5.4653  lr=2.85e-04  ETA_epoch=15.7min
+    step  11000  loss=5.2158  lr=2.83e-04  ETA_epoch=13.7min
+    step  11500  loss=5.1930  lr=2.82e-04  ETA_epoch=11.7min
+    step  12000  loss=5.2169  lr=2.80e-04  ETA_epoch=9.7min
+    step  12500  loss=4.8689  lr=2.78e-04  ETA_epoch=7.7min
+    step  13000  loss=4.9933  lr=2.77e-04  ETA_epoch=5.8min
+    step  13500  loss=5.1113  lr=2.75e-04  ETA_epoch=3.8min
+    step  14000  loss=5.1170  lr=2.73e-04  ETA_epoch=1.8min
+  Epoch  2/10  train=5.2152  val=4.8650  ppl=129.7  best=4.8650  [3445.4s] *
+    step  14500  loss=4.7158  lr=2.71e-04  ETA_epoch=28.7min
+    step  15000  loss=5.1811  lr=2.69e-04  ETA_epoch=26.5min
+    step  15500  loss=4.8463  lr=2.67e-04  ETA_epoch=24.5min
+    step  16000  loss=5.0441  lr=2.65e-04  ETA_epoch=22.5min
+    step  16500  loss=4.8312  lr=2.63e-04  ETA_epoch=20.5min
+    step  17000  loss=4.4252  lr=2.61e-04  ETA_epoch=18.6min
+    step  17500  loss=4.8015  lr=2.59e-04  ETA_epoch=16.6min
+    step  18000  loss=4.6288  lr=2.56e-04  ETA_epoch=14.6min
+    step  18500  loss=4.7602  lr=2.54e-04  ETA_epoch=12.6min
+    step  19000  loss=4.6347  lr=2.52e-04  ETA_epoch=10.6min
+    step  19500  loss=4.6039  lr=2.49e-04  ETA_epoch=8.6min
+    step  20000  loss=4.8078  lr=2.47e-04  ETA_epoch=6.6min
+    step  20500  loss=4.3233  lr=2.44e-04  ETA_epoch=4.7min
+    step  21000  loss=4.5916  lr=2.42e-04  ETA_epoch=2.7min
+    step  21500  loss=4.5339  lr=2.39e-04  ETA_epoch=0.7min
+  Epoch  3/10  train=4.7808  val=4.5338  ppl=93.1  best=4.5338  [5168.4s] *
+    step  22000  loss=4.4905  lr=2.36e-04  ETA_epoch=27.5min
+    step  22500  loss=4.6311  lr=2.34e-04  ETA_epoch=25.5min
+    step  23000  loss=4.3616  lr=2.31e-04  ETA_epoch=23.5min
+    step  23500  loss=4.5971  lr=2.28e-04  ETA_epoch=21.5min
+    step  24000  loss=4.5216  lr=2.25e-04  ETA_epoch=19.5min
+    step  24500  loss=4.6385  lr=2.23e-04  ETA_epoch=17.5min
+    step  25000  loss=4.3996  lr=2.20e-04  ETA_epoch=15.5min
+    step  25500  loss=4.5433  lr=2.17e-04  ETA_epoch=13.5min
+    step  26000  loss=4.8338  lr=2.14e-04  ETA_epoch=11.5min
+    step  26500  loss=4.4568  lr=2.11e-04  ETA_epoch=9.5min
+    step  27000  loss=4.3521  lr=2.08e-04  ETA_epoch=7.6min
+    step  27500  loss=4.5557  lr=2.05e-04  ETA_epoch=5.6min
+    step  28000  loss=4.4750  lr=2.02e-04  ETA_epoch=3.6min
+    step  28500  loss=4.4359  lr=1.99e-04  ETA_epoch=1.6min
+  Epoch  4/10  train=4.4871  val=4.3063  ppl=74.2  best=4.3063  [6894.8s] *
+    step  29000  loss=4.6672  lr=1.96e-04  ETA_epoch=28.4min
+    step  29500  loss=4.3319  lr=1.93e-04  ETA_epoch=26.3min
+    step  30000  loss=4.2595  lr=1.89e-04  ETA_epoch=24.3min
+    step  30500  loss=4.2389  lr=1.86e-04  ETA_epoch=22.3min
+    step  31000  loss=4.3842  lr=1.83e-04  ETA_epoch=20.3min
+    step  31500  loss=4.1991  lr=1.80e-04  ETA_epoch=18.4min
+    step  32000  loss=4.3141  lr=1.77e-04  ETA_epoch=16.4min
+    step  32500  loss=4.4044  lr=1.74e-04  ETA_epoch=14.4min
+    step  33000  loss=4.3496  lr=1.70e-04  ETA_epoch=12.4min
+    step  33500  loss=4.1362  lr=1.67e-04  ETA_epoch=10.4min
+    step  34000  loss=4.0693  lr=1.64e-04  ETA_epoch=8.4min
+    step  34500  loss=4.1536  lr=1.61e-04  ETA_epoch=6.5min
+    step  35000  loss=4.2105  lr=1.57e-04  ETA_epoch=4.5min
+    step  35500  loss=4.0299  lr=1.54e-04  ETA_epoch=2.5min
+    step  36000  loss=4.2024  lr=1.51e-04  ETA_epoch=0.5min
+  Epoch  5/10  train=4.2934  val=4.1672  ppl=64.5  best=4.1672  [8618.8s] *
+    step  36500  loss=4.3348  lr=1.48e-04  ETA_epoch=27.2min
+    step  37000  loss=4.1989  lr=1.44e-04  ETA_epoch=25.2min
+    step  37500  loss=4.3297  lr=1.41e-04  ETA_epoch=23.2min
+    step  38000  loss=4.1348  lr=1.38e-04  ETA_epoch=21.2min
+    step  38500  loss=3.9770  lr=1.35e-04  ETA_epoch=19.3min
+    step  39000  loss=4.1114  lr=1.31e-04  ETA_epoch=17.3min
+    step  39500  loss=4.2309  lr=1.28e-04  ETA_epoch=15.3min
+    step  40000  loss=4.0307  lr=1.25e-04  ETA_epoch=13.3min
+    step  40500  loss=4.2203  lr=1.22e-04  ETA_epoch=11.3min
+    step  41000  loss=4.2416  lr=1.18e-04  ETA_epoch=9.3min
+    step  41500  loss=4.1138  lr=1.15e-04  ETA_epoch=7.3min
+    step  42000  loss=4.0430  lr=1.12e-04  ETA_epoch=5.4min
+    step  42500  loss=4.0322  lr=1.09e-04  ETA_epoch=3.4min
+    step  43000  loss=4.0803  lr=1.06e-04  ETA_epoch=1.4min
+  Epoch  6/10  train=4.1605  val=4.0776  ppl=59.0  best=4.0776  [10342.4s] *
+    step  43500  loss=3.9324  lr=1.03e-04  ETA_epoch=28.2min
+    step  44000  loss=3.9570  lr=9.96e-05  ETA_epoch=26.2min
+    step  44500  loss=4.2240  lr=9.66e-05  ETA_epoch=24.2min
+    step  45000  loss=3.9587  lr=9.35e-05  ETA_epoch=22.2min
+    step  45500  loss=3.9948  lr=9.05e-05  ETA_epoch=20.2min
+    step  46000  loss=4.2432  lr=8.76e-05  ETA_epoch=18.2min
+    step  46500  loss=4.1211  lr=8.46e-05  ETA_epoch=16.2min
+    step  47000  loss=3.9968  lr=8.17e-05  ETA_epoch=14.2min
+    step  47500  loss=4.2397  lr=7.88e-05  ETA_epoch=12.2min
+    step  48000  loss=4.0697  lr=7.59e-05  ETA_epoch=10.2min
+    step  48500  loss=4.2634  lr=7.31e-05  ETA_epoch=8.3min
+    step  49000  loss=4.0885  lr=7.03e-05  ETA_epoch=6.3min
+    step  49500  loss=3.9256  lr=6.76e-05  ETA_epoch=4.3min
+    step  50000  loss=3.8975  lr=6.49e-05  ETA_epoch=2.3min
+    step  50500  loss=4.1344  lr=6.22e-05  ETA_epoch=0.3min
+  Epoch  7/10  train=4.0656  val=4.0169  ppl=55.5  best=4.0169  [12069.7s] *
+    step  51000  loss=4.0709  lr=5.96e-05  ETA_epoch=27.0min
+    step  51500  loss=4.0938  lr=5.70e-05  ETA_epoch=25.0min
+    step  52000  loss=4.0813  lr=5.45e-05  ETA_epoch=23.0min
+    step  52500  loss=4.1695  lr=5.20e-05  ETA_epoch=21.1min
+    step  53000  loss=4.0582  lr=4.95e-05  ETA_epoch=19.1min
+    step  53500  loss=4.1099  lr=4.72e-05  ETA_epoch=17.1min
+    step  54000  loss=3.7384  lr=4.48e-05  ETA_epoch=15.1min
+    step  54500  loss=3.8878  lr=4.25e-05  ETA_epoch=13.1min
+    step  55000  loss=4.0623  lr=4.03e-05  ETA_epoch=11.1min
+    step  55500  loss=4.0829  lr=3.81e-05  ETA_epoch=9.1min
+    step  56000  loss=4.0455  lr=3.59e-05  ETA_epoch=7.2min
+    step  56500  loss=3.8416  lr=3.38e-05  ETA_epoch=5.2min
+    step  57000  loss=4.0242  lr=3.18e-05  ETA_epoch=3.2min
+    step  57500  loss=3.9797  lr=2.98e-05  ETA_epoch=1.2min
+  Epoch  8/10  train=3.9981  val=3.9829  ppl=53.7  best=3.9829  [13795.1s] *
+    step  58000  loss=3.9214  lr=2.79e-05  ETA_epoch=28.0min
+    step  58500  loss=3.9993  lr=2.60e-05  ETA_epoch=25.9min
+    step  59000  loss=3.9362  lr=2.42e-05  ETA_epoch=23.9min
+    step  59500  loss=3.6567  lr=2.25e-05  ETA_epoch=22.0min
+    step  60000  loss=3.7090  lr=2.08e-05  ETA_epoch=20.0min
+    step  60500  loss=3.6369  lr=1.92e-05  ETA_epoch=18.0min
+    step  61000  loss=3.9479  lr=1.76e-05  ETA_epoch=16.0min
+    step  61500  loss=4.0909  lr=1.61e-05  ETA_epoch=14.0min
+    step  62000  loss=3.9419  lr=1.47e-05  ETA_epoch=12.0min
+    step  62500  loss=4.2088  lr=1.33e-05  ETA_epoch=10.0min
+    step  63000  loss=4.1023  lr=1.20e-05  ETA_epoch=8.0min
+    step  63500  loss=3.7148  lr=1.07e-05  ETA_epoch=6.1min
+    step  64000  loss=3.9009  lr=9.55e-06  ETA_epoch=4.1min
+    step  64500  loss=3.8156  lr=8.44e-06  ETA_epoch=2.1min
+    step  65000  loss=3.9098  lr=7.39e-06  ETA_epoch=0.1min
+  Epoch  9/10  train=3.9542  val=3.9663  ppl=52.8  best=3.9663  [15520.6s] *
+    step  65500  loss=3.6189  lr=6.41e-06  ETA_epoch=26.9min
+    step  66000  loss=4.0132  lr=5.51e-06  ETA_epoch=24.9min
+    step  66500  loss=3.9594  lr=4.66e-06  ETA_epoch=22.9min
+    step  67000  loss=3.8866  lr=3.89e-06  ETA_epoch=20.9min
+    step  67500  loss=4.0687  lr=3.19e-06  ETA_epoch=18.9min
+    step  68000  loss=4.0150  lr=2.55e-06  ETA_epoch=16.9min
+    step  68500  loss=3.8225  lr=1.99e-06  ETA_epoch=14.9min
+    step  69000  loss=4.1772  lr=1.50e-06  ETA_epoch=12.9min
+    step  69500  loss=3.6673  lr=1.07e-06  ETA_epoch=10.9min
+    step  70000  loss=4.0417  lr=7.17e-07  ETA_epoch=8.9min
+    step  70500  loss=3.6047  lr=4.34e-07  ETA_epoch=7.0min
+    step  71000  loss=3.8832  lr=2.22e-07  ETA_epoch=5.0min
+    step  71500  loss=3.9130  lr=7.98e-08  ETA_epoch=3.0min
+    step  72000  loss=3.7977  lr=8.86e-09  ETA_epoch=1.0min
+  Epoch 10/10  train=3.9318  val=3.9646  ppl=52.7  best=3.9646  [17245.6s] *
+  DONE in 17246.8s (287.4min)  best_val=3.9646  ppl=52.7
